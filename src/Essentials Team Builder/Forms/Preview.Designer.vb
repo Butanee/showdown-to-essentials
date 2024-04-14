@@ -22,6 +22,7 @@ Partial Class Preview
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Preview))
         output_rchTxt = New RichTextBox()
         exit_btn = New Button()
         saveToTrainers_btn = New Button()
@@ -29,40 +30,27 @@ Partial Class Preview
         ' 
         ' output_rchTxt
         ' 
-        output_rchTxt.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        resources.ApplyResources(output_rchTxt, "output_rchTxt")
         output_rchTxt.BorderStyle = BorderStyle.None
-        output_rchTxt.Location = New Point(12, 12)
         output_rchTxt.Name = "output_rchTxt"
         output_rchTxt.ReadOnly = True
-        output_rchTxt.Size = New Size(501, 471)
-        output_rchTxt.TabIndex = 0
-        output_rchTxt.Text = ""
         ' 
         ' exit_btn
         ' 
-        exit_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        exit_btn.Location = New Point(438, 489)
+        resources.ApplyResources(exit_btn, "exit_btn")
         exit_btn.Name = "exit_btn"
-        exit_btn.Size = New Size(75, 23)
-        exit_btn.TabIndex = 1
-        exit_btn.Text = "Exit"
         exit_btn.UseVisualStyleBackColor = True
         ' 
         ' saveToTrainers_btn
         ' 
-        saveToTrainers_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        saveToTrainers_btn.Location = New Point(12, 489)
+        resources.ApplyResources(saveToTrainers_btn, "saveToTrainers_btn")
         saveToTrainers_btn.Name = "saveToTrainers_btn"
-        saveToTrainers_btn.Size = New Size(420, 23)
-        saveToTrainers_btn.TabIndex = 2
-        saveToTrainers_btn.Text = "Save to trainers.txt"
         saveToTrainers_btn.UseVisualStyleBackColor = True
         ' 
         ' Preview
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(525, 524)
         Controls.Add(saveToTrainers_btn)
         Controls.Add(exit_btn)
         Controls.Add(output_rchTxt)
@@ -70,8 +58,6 @@ Partial Class Preview
         MinimizeBox = False
         Name = "Preview"
         ShowIcon = False
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Preview"
         ResumeLayout(False)
     End Sub
 

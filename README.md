@@ -2,6 +2,9 @@
     <img src="./logo/ETB_LOGO.png" height="250px">
     <h1>Essentials Team Builder</h1>
 </p>
+<div>
+  <span>English</span> / <a href=".github/README-es.md">Español</a> / <a href=".github/README-fr.md">Français</a> / <a href=".github/README-de.md">Deutsch</a> / <a href=".github/README-it.md">Italiano</a> / <a href=".github/README-zhHK.md">繁體中文</a> / <a href=".github/README-zh.md">简体中文</a>
+</div>
 
 This tool is designed to help make the development of Pok&eacute;mon fan-games easier, by providing an easy-to-use GUI. Just fill out the required fields, click the "Generate/Preview" button, and you are done!
 

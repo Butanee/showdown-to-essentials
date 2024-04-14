@@ -29,28 +29,21 @@ Partial Class ThirdPartyLicenses
         ' 
         ' close_btn
         ' 
-        close_btn.Location = New Point(483, 415)
+        resources.ApplyResources(close_btn, "close_btn")
         close_btn.Name = "close_btn"
-        close_btn.Size = New Size(75, 23)
-        close_btn.TabIndex = 0
-        close_btn.Text = "Close"
         close_btn.UseVisualStyleBackColor = True
         ' 
         ' licenses_rchTxt
         ' 
         licenses_rchTxt.BorderStyle = BorderStyle.None
-        licenses_rchTxt.Location = New Point(12, 12)
+        resources.ApplyResources(licenses_rchTxt, "licenses_rchTxt")
         licenses_rchTxt.Name = "licenses_rchTxt"
         licenses_rchTxt.ReadOnly = True
-        licenses_rchTxt.Size = New Size(546, 397)
-        licenses_rchTxt.TabIndex = 1
-        licenses_rchTxt.Text = resources.GetString("licenses_rchTxt.Text")
         ' 
         ' ThirdPartyLicenses
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(570, 450)
         Controls.Add(licenses_rchTxt)
         Controls.Add(close_btn)
         FormBorderStyle = FormBorderStyle.FixedSingle
@@ -58,8 +51,6 @@ Partial Class ThirdPartyLicenses
         MinimizeBox = False
         Name = "ThirdPartyLicenses"
         ShowIcon = False
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Third-Party Licenses"
         ResumeLayout(False)
     End Sub
 

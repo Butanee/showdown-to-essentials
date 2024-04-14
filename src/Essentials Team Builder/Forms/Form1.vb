@@ -14,6 +14,10 @@ Public Class Form1
             ' I borrowed English (World) for Leet Speak. Don't mind me.
             Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("en-001")
             Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("en-001")
+        ElseIf My.Settings.Lang = 2 Then
+            '添加中文，Add Chinese language
+            Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("zh-Hans")
+            Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("zh-Hans")
         End If
 
         ' This call is required by the designer.
@@ -504,6 +508,9 @@ Public Class Form1
             ElseIf lang_cmb.SelectedIndex = 1 Then
                 Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("en-001")
                 Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("en-001")
+            ElseIf lang_cmb.SelectedIndex = 2 Then
+                Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("zh-Hans")
+                Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("zh-Hans")
             End If
 
             ' Save the settings
